@@ -10,7 +10,7 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
-  app.setGlobalPrefix('api/v2');
+  app.setGlobalPrefix('api');
   await app.listen(3000);
 }
 bootstrap();
