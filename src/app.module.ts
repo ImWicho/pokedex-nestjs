@@ -4,6 +4,8 @@ import { join } from 'path';
 import { PokemonsModule } from './pokemons/pokemons.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { CommonModule } from './common/common.module';
+import { SeedModule } from './seed/seed.module';
+
 @Module({
   imports: [
     ServeStaticModule.forRoot({
@@ -12,6 +14,7 @@ import { CommonModule } from './common/common.module';
     PokemonsModule,
     MongooseModule.forRoot('mongodb://localhost:27018/nest-pokemon'),
     CommonModule,
+    SeedModule,
   ],
   controllers: [],
   providers: [],

@@ -23,6 +23,12 @@ pnpm add @nestjs/cli -g
 docker-compose up -d
 ```
 
+5. Llenar la DB
+
+```
+http://localhost:3000/api/seed
+```
+
 ## Stack usado
 
 - MongoDB
